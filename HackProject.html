@@ -1,0 +1,288 @@
+<html>
+<head>
+<title>Media Page</title>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<style>
+    body {
+        background-image: url(/HackProject/bg.jpg);
+        background-size: cover;
+    }
+    .navbar-fixed-top{
+        align-content: center;
+    }
+    body{
+        min-width: 1000px;
+    }
+    .list-group{
+        float: left;
+    }
+    .vidcontainer{
+        float:left;
+        padding: 50px;
+    }
+    .logout{
+        align-content: center;
+    }
+    .btn{
+        width: 220px;
+    }
+    .dropdown-menu{
+       width: 190px; 
+    }
+</style>
+<script>
+function SwapVideo(vidURL) {
+var myVideo = document.getElementsByTagName('video')[0];
+myVideo.src = vidURL;
+myVideo.load();
+}
+</script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div>
+    <ul class="nav navbar-nav">
+        <li>
+            <a></a>
+        </li>
+        <li>
+            <img src="WD.png" height="50px" width="80px">
+        </li>
+        <li>
+            <a></a>
+        </li>
+        <li>
+            <a href="HackLogin.php">Home</a>
+        </li>
+        <li>
+            <a href="#">Movies</a>
+        </li>
+        <li>
+            <a href="TVshows.html">TV Shows</a>
+        </li>
+        <li>
+            <a href="#">Music</a>
+        </li>
+        <li>
+            <a href="About.html">About Us</a>
+        </li>
+    </ul>
+  </div>
+</nav>
+</br>
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+  <div>
+    <ul class="nav navbar-nav">
+        <li>
+            <a></a>
+        </li>
+        <li>
+            <img src="WD.png" height="50px" width="80px">
+        </li>
+        <li>
+            <a></a>
+        </li>
+        <li>
+            <a href="#top">Return to Top</a>
+        </li>
+        <li id="logout">
+            <a href="logout.php">Logout</a>
+        </li>
+    </ul>
+  </div>
+</nav>
+</br>
+</br>
+<div class="list-group">
+<form>
+    <div class="dropdown">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">007 - James Bond Collection <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+    <li><a onclick="SwapVideo()">Dr. No (1962)</a></li>
+    <li><a onclick="SwapVideo()">From Russia With Love</a></li>
+    <li><a onclick="SwapVideo()">Goldfinger (1964)</a></li>
+    <li><a onclick="SwapVideo()">Thunderball (1965)</a></li>
+    <li><a onclick="SwapVideo()">You Only Live Twice</a></li>
+    <li><a onclick="SwapVideo()">Diamonds Are Forever</a></li>
+    <li><a onclick="SwapVideo()">Live and Let Die</a></li>
+    <li><a onclick="SwapVideo()">Man with the Golden Gun</a></li>
+    <li><a onclick="SwapVideo()">Octopussy (1983)</a></li>
+    <li><a onclick="SwapVideo()">License to Kill (1989)</a></li>
+    <li><a onclick="SwapVideo()">Goldeneye (1995)</a></li>
+    <li><a onclick="SwapVideo()">Tomorrow Never Dies</a></li>
+    <li><a onclick="SwapVideo()">The World is Not Enough</a></li>
+    <li><a onclick="SwapVideo()">Die Another Day (2002)</a></li>
+    <li><a onclick="SwapVideo()">Casino Royale (2006)</a></li>
+    <li><a onclick="SwapVideo()">Quantum of Solace</a></li>
+    <li><a onclick="SwapVideo()">Skyfall (2012)</a></li>
+    <li><a onclick="SwapVideo()">Spectre (2015)</a></li>
+    </ul>
+    </div>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(12 Rounds)">12 Rounds</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(300)">300</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(2012)">2012</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(A Bugs Life)">A Bugs Life</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(A Night At The Museum)">A Night At The Museum</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Accepted)">Accepted</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Pet Detective)">Ace Ventura: Pet Detective</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(American Gangster)">American Gangster</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Avatar)">Avatar</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Batman Begins)">Batman Begins</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo('sampleBH6.mp4')">Big Hero 6</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Billy Madison)">Billy Madison</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Blazing Saddles)">Blazing Saddles</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Bolt)">Bolt</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Boondock Saints)">Boondock Saints</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Bucket List)">Bucket List</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Burlesque)">Burlesque</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Caddyshack)">Caddyshack</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Cars)">Cars</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Chocolate Factory)">Charlie & The Chocolate Factory</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Cowboys and Aliens)">Cowboys and Aliens</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Eagle Eye)">Eagle Eye</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Disney Earth)">Earth(by Disney)</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Elf)">Elf</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Evan Almighty)">Evan Almighty</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Finding Nemo)">Finding Nemo</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Frozen)">Frozen</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Gladiator)">Gladiator</button>
+</br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Gone in 60 Seconds)">Gone in 60 Seconds</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Gran Torino)">Gran Torino</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Hancock)">Hancock</button>
+    </br>
+    <div class="dropdown">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Harry Potter Collection <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+    <li><a onclick="SwapVideo()">The Philosopher's Stone</a></li>
+    <li><a onclick="SwapVideo()">The Chamber of Secrets</a></li>
+    <li><a onclick="SwapVideo()">The Prisoner of Azkaban</a></li>
+    <li><a onclick="SwapVideo()">The Goblet of Fire</a></li>
+    <li><a onclick="SwapVideo()">The Order of the Phoenix</a></li>
+    <li><a onclick="SwapVideo()">The Half-Blood Prince</a></li>
+    <li><a onclick="SwapVideo()">The Deathly Hallows 1</a></li>
+    <li><a onclick="SwapVideo()">The Deathly Hallows 2</a></li>
+    </ul>
+    </div>
+    <div class="dropdown">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">High School Musical <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+    <li><a onclick="SwapVideo()">High School Musical 1</a></li>
+    <li><a onclick="SwapVideo()">High School Musical 2</a></li>
+    <li><a onclick="SwapVideo()">High School Musical 3</a></li>
+    </ul>
+    </div>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Hocus Pocus)">Hocus Pocus</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo('sampleHTTYD.mp4')">How to Train Your Dragon</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(IRobot)">I Robot</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideoI Am Legend)">I Am Legend</button>
+    </br>
+    <div class="dropdown">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Ice Age Collection <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+    <li><a onclick="SwapVideo()">Ice Age (2002)</a></li>
+    <li><a onclick="SwapVideo()">The Meltdown (2006)</a></li>
+    <li><a onclick="SwapVideo()">Dawn of the Dinosaurs</a></li>
+    <li><a onclick="SwapVideo()">Continental Drift</a></li>
+    </ul>
+    </div>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Inception)">Inception</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Iron Man)">Iron Man</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Iron Man 2)">Iron Man 2</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Jack Reacher)">Jack Reacher</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Kick Ass)">Kick Ass</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Kid Cannabis)">Kid Cannabis</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Kung Fu Panda)">Kung Fu Panda</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Lawless)">Lawless</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Lincoln)">Lincoln</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Madagascar)">Madagascar</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Monsters Inc)">Monsters inc.</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Peabody and Sherman)">Mr. Peabody & Sherman</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Never Back Down)">Never Back Down</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Night At The Museum)">Night At The Museum</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Over the Hedge)">Over the Hedge</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Pearl Harbor)">Pearl Harbor</button>
+    </br>
+    <div class="dropdown">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Pirates of the Carribbean <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+    <li><a onclick="SwapVideo()">Curse of the Black Pearl</a></li>
+    <li><a onclick="SwapVideo()">Dead Man's Chest</a></li>
+    <li><a onclick="SwapVideo()">At World's End</a></li>
+    <li><a onclick="SwapVideo()">On Stranger Tides</a></li>
+    <li><a onclick="SwapVideo()">Dead Men Tell No Tales</a></li>
+    </ul>
+    </div>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Pitch Perfect)">Pitch Perfect</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Pitch Perfect 2)">Pitch Perfect 2</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Planes)">Planes</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Remember The Titans)">Remember The Titans</button>
+    </br>
+  <button type="button" class="btn btn-default" onclick="SwapVideo(Saving Mr Banks)">Saving Mr. Banks</button>
+    </br>
+    </br>
+    </br>
+</form>
+</div>
+<div class= "vidcontainer">
+	<video id="VideoPlayer" class="video-js vjs-default-skin"
+  controls preload="auto" width="854" height="480">
+</div>
+</br>
+</br>
+</br>
+</body>
+</html>
